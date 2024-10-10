@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AddNoteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:background="@drawable/pink_border"
+            android:layout_width="match_parent"
+            android:textSize="50dp"
+            android:textColor="@color/pink"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add Note Here" />
+
+        <EditText
+            android:id="@+id/Note_Heading"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/pink_border"
+            android:ems="10"
+            android:scrollbars="vertical"
+
+            android:hint="Please Add Your Note Heading"
+            android:inputType="text"
+            android:padding="12sp" />
+
+        <EditText
+            android:padding="12sp"
+            android:background="@drawable/pink_border"
+            android:id="@+id/Note_text"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_gravity="center"
+           android:gravity="start"
+            android:scrollbars="vertical"
+
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Please Add your Note Here"
+            android:inputType="text" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.EditNoteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:background="@drawable/pink_border"
+            android:layout_width="match_parent"
+            android:textSize="50dp"
+            android:textColor="@color/pink"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Edit Note Here" />
+
+        <EditText
+            android:id="@+id/Edit_Note_Heading"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/pink_border"
+            android:ems="10"
+            android:scrollbars="vertical"
+
+            android:hint="Please Add Your Note Heading"
+            android:inputType="text"
+            android:padding="12sp" />
+
+        <EditText
+
+            android:padding="12sp"
+            android:background="@drawable/pink_border"
+            android:id="@+id/Edit_Note_text"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Please Add your Note Here"
+            android:inputType="text" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/EditNoteFab_done"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="4dp"
+            android:backgroundTint="@color/pink"
+            android:clickable="true"
+
+            app:srcCompat="@drawable/baseline_done_24" />
+
+    </LinearLayout>
+</FrameLayout>
